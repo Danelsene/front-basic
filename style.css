@@ -1,0 +1,34 @@
+* {
+    color:brown;
+    width: 1000px;
+}
+
+p {
+    color:green;
+}
+
+.some-class {
+    color:blueviolet;
+}
+
+#some-id {
+    color:yellow;
+}
+
+[data-target] {
+    color:red;
+}
+
+div > p {
+    color:blue;
+}
+
+.one.two {
+    color:aqua;
+
+}
+
+p.three, .four {
+    background-color: blueviolet;
+    color: antiquewhite;
+}
