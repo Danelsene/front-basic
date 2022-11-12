@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: rgb(160, 201, 228);
+    max-width: 350px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(92, 29, 10);
+}
+
+.image {
+    max-width: 300px;
+}
