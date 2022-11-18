@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Homework 7</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <h1>Пошук</h1>
+            <form action="https://fom.in.ua/echo" method="post">
+                <p>
+                    <label> Тип кузова
+                        <select name="body-type">
+                            <option value="none" disabled selected>Обрати</option>
+                            <option value="sedan">Седан</option>
+                            <option value="coupe">Купе</option>
+                            <option value="universal">Універсал</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label> Марка авто
+                        <select name="car-brand">
+                            <option value="none" disabled selected>Обрати</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="renault">Renault</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label> Країна виробник
+                        <select name="country">
+                            <option value="none" disabled selected>Обрати</option>
+                            <option value="germany">Німеччина</option>
+                            <option value="france">Франція</option>
+                            <option value="italy">Італія</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label> Ціна, тисяч гривень
+                        <input type="number" name="price" placeholder="Від" min="0">
+                    </label>
+                    <label>
+                        <input type="number" name="price" placeholder="До">
+                    </label>
+                </p>
+                <p>
+                    <label> Рік випуску
+                        <input type="number" name="year" placeholder="Від" min="1990">
+                    </label>
+                    <label>
+                        <input type="number" name="year" placeholder="До" max="2022">
+                    </label>
+                </p>
+                <fieldset>
+                    <legend>Стан</legend>
+                    <p>
+                        <label> Биті
+                            <input type="checkbox" name="broken">
+                        </label>
+                        <label> У кредиті
+                            <input type="checkbox" name="in-credit">
+                        </label>
+                        <label> Не розмитнені
+                            <input type="checkbox" name="non-customed">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип палива</legend>
+                    <p>
+                        <label> Дизель
+                            <input type="radio" name="fuel" value="diesel">
+                        </label>
+                        <label> Газ
+                            <input type="radio" name="fuel" value="gas">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип коробки передач</legend>
+                    <p>
+                        <label> Ручна
+                            <input type="radio" name="transmission" value="manual">
+                        </label>
+                        <label> Автоматична
+                            <input type="radio" name="transmission" value="auto">
+                        </label>
+                    </p>
+                </fieldset>
+                <p>
+                    <label> Колір
+                        <input type="color" name="color">
+                    </label>
+                </p>
+                <fieldset>
+                    <legend>Комфорт</legend>
+                    <p>
+                        <label> Люк
+                            <input type="checkbox" name="hatch">
+                        </label>
+                        <label> Шкіряний салон
+                            <input type="checkbox" name="leather">
+                        </label>
+                        <label> Дах-кабріолет
+                            <input type="checkbox" name="cabriolet">
+                        </label>
+                        <label> Кондиціонер
+                            <input type="checkbox" name="conditioner">
+                        </label>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Знайти</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
