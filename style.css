@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.border {
+    border: 1px solid;
+}
+
+.col1 {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center; 
+}
+
+table {
+    max-width: 1110px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
