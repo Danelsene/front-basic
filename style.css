@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: rgb(243, 164, 164);
+  background-color: rgb(70, 77, 96);
+  color: beige;
 }
 nav ul {
   list-style: none;
@@ -15,7 +16,7 @@ nav a {
   text-decoration: none;
 }
 .topmenu {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(134, 189, 228, 0.8);
 }
 .topmenu > li {
   display: inline-block;
@@ -26,15 +27,15 @@ nav a {
   line-height: 70px;
   padding: 0 40px;
   font-weight: bold;
-  color: #64367b;
+  color: #382a3e;
 }
 
 .topmenu li a:hover {
-  color: #e6855f;
+  color: #ecdbdb;
 }
 
 .submenu {
-  background: white;
+  background: rgba(134, 189, 228, 0.8);
   border: 1px solid #db6dc3;
   position: absolute;
   left: 0;
@@ -51,13 +52,13 @@ nav a {
 }
 
 .submenu li a {
-  color: #7f7f7f;
+  color: #382a3e;
   line-height: 36px;
   padding: 0 25px;
 }
 
 .submenu2 {
-  background: white;
+  background: rgba(134, 189, 228, 0.8);
   border: 1px solid #db6dc3;
   position: absolute;
   left: 100%;
@@ -68,4 +69,8 @@ nav a {
 
 .submenu > li:hover .submenu2 {
   display: block;
+}
+
+.nav-menu li:hover {
+  background-color: #8355d2;
 }
