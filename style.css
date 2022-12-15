@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.container {
+  width: 100%;
+  max-width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*----------------------------------------------------Header-------------------------------------------------*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 390px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav_ul {
+  display: flex;
+  gap: 40px;
+}
+
+.cart {
+  display: flex;
+  gap: 8px;
+}
+
+.cart_amount {
+  width: 24px;
+  height: 24px;
+  background-color: #e7ded8;
+  font-size: 11px;
+  color: #68513f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------------------------------------------Section 1--------------------------------------------------*/
+
+.first_section {
+  border: 1px solid transparent;
+  min-height: 752px;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: 940px;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "STSong";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 88px;
+  line-height: 126px;
+  color: #000000;
+  max-width: 510px;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.you {
+  position: absolute;
+  left: 423px;
+  bottom: 163px;
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-size: 175px;
+  text-align: right;
+  color: #68513f;
+  transform: rotate(5.54deg);
+}
+
+.button {
+  font-size: 14px;
+  color: #68513f;
+  background: #f1ebe7;
+  border: 1px solid #dacec6;
+  padding: 13px 21px;
+  width: 100%;
+  max-width: 140px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/*-----------------------------------------------Section 2------------------------------------------------------------*/
+
+.second_section {
+  border: 1px solid transparent;
+  min-height: 950px;
+  position: relative;
+}
+
+h2 {
+  font-family: "STSong";
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 1.4;
+  color: #000000;
+  max-width: 525px;
+}
+
+.cursive {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-size: 137px;
+  color: #68513f;
+  transform: rotate(-5.08deg);
+  margin-bottom: 18px;
+}
+
+.img1 {
+  position: absolute;
+  left: 36px;
+  top: 117px;
+}
+
+.img2 {
+  position: absolute;
+  left: 94px;
+  bottom: 238px;
+}
+
+.img3 {
+  position: absolute;
+  top: 21px;
+  right: 209px;
+}
+
+.img4 {
+  position: absolute;
+  top: 266px;
+  right: 65px;
+}
+
+.img5 {
+  position: absolute;
+  bottom: 157px;
+  right: 152px;
+  z-index: -1;
+}
+
+.second_section_center {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 240px;
+}
+
+.second_section_text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 47px;
+}
+
+.second_section_button {
+  margin: 0;
+  border-radius: 25px;
+  min-height: 45px;
+  max-width: 100px;
+}
+
+/*--------------------------------------------------Section 3---------------------------------------------------------------*/
+
+.third_section {
+  max-height: 500px;
+}
+
+/*------------------------------------------------Cards section---------------------------------------------------------------*/
+
+.cards_section_center {
+  width: 100%;
+  max-width: 674px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+
+.products {
+  transform: none;
+  margin-bottom: 0;
+  line-height: 0.8;
+}
+
+.health {
+  width: 100%;
+  max-width: 674px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%;
+  max-width: 325px;
+  background: #e7ded8;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card_image {
+  margin-top: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  gap: 118px;
+  margin-top: 20px;
+}
+
+.product_type,
+.product_price {
+  font-size: 13px;
+  line-height: 1.5px;
+  text-transform: uppercase;
+}
+
+.naming {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-top: 7.5px;
+  text-align: left;
+  min-height: 52px;
+  margin-left: 25px;
+  margin-bottom: 14px;
+}
+
+.special {
+  max-width: 206px;
+}
+
+.card_button {
+  margin: 0;
+  max-width: 305px;
+}
+
+/*---------------------------------------------Feature section---------------------------------------------*/
+
+.section_feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  min-height: 510px;
+  margin-top: 90px;
+}
+
+.feature_image {
+  position: relative;
+  top: 30px;
+}
+
+.feature_text_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.abroad {
+  transform: none;
+  line-height: 0.8;
+  margin-bottom: 9px;
+}
+
+.feature_section_text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #000000;
+  max-width: 460px;
+  margin-top: 25px;
+  margin-bottom: 39px;
+}
+
+.read_more {
+  margin: 0;
+}
+
+/*----------------------------------------------Brands section-----------------------------------------------*/
+
+.brands_block {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand_text {
+  font-size: 28px;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 832px;
+  margin-top: 202px;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 66px;
+  margin-bottom: 200px;
+}
+
+/*----------------------------------------Photo cards section-------------------------------------------------*/
+
+.photo_cards {
+  display: flex;
+  justify-content: center;
+}
+
+.photo_card1 {
+  background-image: url(/images/body_wash.png);
+  background-color: rgb(175, 175, 175);
+  width: 100%;
+  max-width: 515px;
+  aspect-ratio: 2/2;
+}
+
+.photo_card2 {
+  background-image: url(/images/face_wash.png);
+  background-color: rgb(175, 175, 175);
+  width: 100%;
+  max-width: 515px;
+  aspect-ratio: 2/2;
+}
+
+.photo_card3 {
+  background-image: url(/images/cleanser.png);
+  background-color: rgb(175, 175, 175);
+  width: 100%;
+  max-width: 515px;
+  aspect-ratio: 2/2;
+}
+
+.rectangle {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1/1;
+  border: 1px solid white;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 184px;
+}
+
+.little_text {
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
