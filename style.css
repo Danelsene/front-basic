@@ -233,6 +233,7 @@ h2 {
 .health {
   width: 100%;
   max-width: 674px;
+  margin-bottom: 50px;
 }
 
 .cards {
