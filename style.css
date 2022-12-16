@@ -412,6 +412,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   max-width: 308px;
+  margin-bottom: 50px;
 }
 
 .blog_block {
@@ -454,6 +455,7 @@ h2 {
 .footer_background {
   background: #e7ded8;
   border-radius: 10px;
+  margin-bottom: 62px;
 }
 
 .footer_title {
