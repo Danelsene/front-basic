@@ -79,7 +79,7 @@ li {
   z-index: -1;
 }
 
-h1 {
+.h1 {
   font-family: "STSong";
   font-style: normal;
   font-weight: 300;
@@ -129,13 +129,12 @@ h1 {
   position: relative;
 }
 
-h2 {
+.h2 {
   font-family: "STSong";
   font-weight: 300;
   font-size: 70px;
   line-height: 1.4;
   color: #000000;
-  max-width: 525px;
 }
 
 .cursive {
@@ -145,6 +144,7 @@ h2 {
   color: #68513f;
   transform: rotate(-5.08deg);
   margin-bottom: 18px;
+  text-align: center;
 }
 
 .img1 {
@@ -213,14 +213,7 @@ h2 {
 /*------------------------------------------------Cards section---------------------------------------------------------------*/
 
 .cards_section_center {
-  width: 100%;
-  max-width: 674px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 90px;
 }
 
@@ -231,14 +224,14 @@ h2 {
 }
 
 .health {
-  width: 100%;
-  max-width: 674px;
+  text-align: center;
   margin-bottom: 50px;
 }
 
 .cards {
   display: flex;
   justify-content: space-between;
+  gap: 14px;
 }
 
 .card {
@@ -247,11 +240,7 @@ h2 {
   background: #e7ded8;
   border-radius: 10px;
   text-align: center;
-  padding-bottom: 10px;
-}
-
-.card_image {
-  margin-top: 10px;
+  padding: 10px;
 }
 
 .price {
@@ -264,7 +253,7 @@ h2 {
 .product_type,
 .product_price {
   font-size: 13px;
-  line-height: 1.5px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -363,25 +352,34 @@ h2 {
 .photo_card1 {
   background-image: url(./images/body_wash.png);
   background-color: rgb(175, 175, 175);
-  width: 100%;
-  max-width: 515px;
+  background-size: cover;
+  width: 34%;
   aspect-ratio: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo_card2 {
   background-image: url(./images/face_wash.png);
   background-color: rgb(175, 175, 175);
-  width: 100%;
-  max-width: 515px;
+  background-size: cover;
+  width: 34%;
   aspect-ratio: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo_card3 {
   background-image: url(./images/cleanser.png);
   background-color: rgb(175, 175, 175);
-  width: 100%;
-  max-width: 515px;
+  background-size: cover;
+  width: 34%;
   aspect-ratio: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rectangle {
@@ -391,7 +389,7 @@ h2 {
   border: 1px solid white;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 184px;
+  /* margin-top: 184px; */
 }
 
 .little_text {
@@ -410,10 +408,8 @@ h2 {
   font-size: 66px;
   line-height: 1.4;
   margin-top: 88px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 308px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .blog_block {
