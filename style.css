@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #b3b3ba;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*--------------------------------------Header--------------------------------------*/
+
+.header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head_logo {
+  display: flex;
+}
+
+.page_name {
+  font-size: 36px;
+  color: #323264;
+}
+
+.head_left {
+  width: 100%;
+  max-width: 254px;
+}
+
+.circle {
+  background-color: #b3b3ba;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+}
+
+.contact_stroke {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.facebook:hover svg path {
+  fill: #f0145a;
+}
+
+.lang {
+  font-weight: 700;
+  font-size: 12px;
+  width: 33px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.active {
+  background: #f0145a;
+  border-radius: 8px;
+  color: white;
+}
+
+.lang:hover {
+  background: #f5f5fa;
+  border-radius: 8px;
+}
+
+.phone {
+  font-weight: 700;
+  color: #b3b3ba;
+  text-decoration: none;
+}
+
+.nav_ul {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  font-weight: 700;
+  color: #24a3ff;
+  margin-top: 16px;
+}
+
+.active_page {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
+}
+
+.nav_ul li:hover {
+  border-bottom: 2px solid #24a3ff;
+}
+
+/*------------------------------------------main text-------------------------------*/
+
+.main_text_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main_text {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/*-----------------------------------------------------------cards-----------------------------------------------------*/
+
+.more:hover svg path {
+    stroke: #f0145a;
+  }
+
+.team_card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.team_card img {
+    width: 100%;
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.name_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 700;
+    color: #323264;
+}
+
+.prof {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #B3B3BA;
+    margin-top: 5px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
