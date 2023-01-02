@@ -1,0 +1,92 @@
+@media (max-width: 1024px) {
+  .container {
+    max-width: 904px;
+  }
+
+  .main_text {
+    max-width: 660px;
+  }
+
+  .team_card {
+    max-width: 260px;
+  }
+
+  .team_card img {
+    max-width: 260px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 648px;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .head_left {
+    display: none;
+  }
+
+  .head_left_hidden {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .nav_ul {
+    justify-content: flex-start;
+  }
+
+  .main_text {
+    max-width: 648px;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 315px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .flex_head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .mobile_header {
+    display: block;
+    width: 100%;
+  }
+
+  .main_text {
+    max-width: 315px;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team_card img {
+    max-width: 315px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

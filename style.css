@@ -46,6 +46,14 @@ li {
   max-width: 254px;
 }
 
+.head_left_hidden {
+  display: none;
+}
+
+.mobile_header {
+  display: none;
+}
+
 .circle {
   background-color: #b3b3ba;
   width: 6px;
@@ -61,6 +69,7 @@ li {
 
 .facebook:hover svg path {
   fill: #f0145a;
+  cursor: pointer;
 }
 
 .lang {
@@ -81,6 +90,7 @@ li {
 .lang:hover {
   background: #f5f5fa;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .phone {
@@ -105,6 +115,7 @@ li {
 
 .nav_ul li:hover {
   border-bottom: 2px solid #24a3ff;
+  cursor: pointer;;
 }
 
 /*------------------------------------------main text-------------------------------*/
@@ -130,6 +141,7 @@ li {
 
 .more:hover svg path {
     stroke: #f0145a;
+    cursor: pointer;
   }
 
 .team_card {
@@ -150,6 +162,11 @@ li {
     justify-content: space-between;
 }
 
+.name_part:hover .name {
+  color: #F0145A;
+  cursor: pointer;
+}
+
 .name {
     font-weight: 700;
     color: #323264;
@@ -163,8 +180,58 @@ li {
 }
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+    margin-bottom: 60px;
+}
+
+/*---------------------------------------------------footer---------------------------------------*/
+
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.gray {
+  background: #F5F5FA;
+}
+
+.footer_stroke {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #323264;
+}
+
+.onmap {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.facebook_stroke {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 21px;
+}
+
+.footer_face:hover svg path {
+  fill: #f0145a;
+  cursor: pointer;
+}
+
+.phone_footer {
+  color: #46466E;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.mail {
+  color: #24A3FF;
 }
