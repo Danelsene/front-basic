@@ -64,6 +64,32 @@
     display: none;
   }
 
+  .second_mob_head{
+    display: flex;
+    align-items: center;
+    height: 72px;
+  }
+
+  .head_logo {
+    width: 70px;
+    height: 28px;;
+  }
+
+  .slash{
+    width: 12px;
+    height: 26px;
+    margin: 0 4px;
+  }
+
+  .page_name{
+    font-size: 20px;
+  }
+
+  .lawcompany{
+    width: 75px;
+    height: 5px;
+  }
+
   .flex_head {
     display: flex;
     justify-content: space-between;
@@ -73,11 +99,17 @@
 
   .mobile_header {
     display: block;
-    width: 100%;
+    width: 100vw;
   }
+
+  .main_text_section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
   .main_text {
     max-width: 315px;
+    font-size: 30px;
   }
 
   .wrapper {
@@ -89,4 +121,19 @@
     height: 300px;
     object-fit: cover;
   }
+
+  .footer_stroke {
+    display: block;
+    text-align: center;
+  }
+  
+  .facebook_stroke{
+    display: block;
+    text-align: center;
+  }
+
+  .circle{
+    visibility: hidden;
+  }
 }
+

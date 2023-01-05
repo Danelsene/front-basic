@@ -235,3 +235,142 @@ li {
 .mail {
   color: #24A3FF;
 }
+
+
+
+/*--------------------------------burger-------------------------------------*/
+
+.burger_container {
+  width: 100%;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.check {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  opacity: 0;
+}
+
+.burger{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.burger span {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background-color: #323264;
+  position: absolute;
+  left: 5px;
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+.burger span:first-child{
+  top: 2px;
+}
+.burger span:nth-child(2){
+  top: 10px;
+}
+.burger span:nth-child(3){
+  top: 10px;
+}
+.burger span:last-child{
+  top: 18px;
+}
+
+.nav_burger {
+  display: block;
+  background-color: rgba(80, 80, 80, 0.85);
+  color: white;
+  font-size: 2rem;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.nav_burger ul {
+  background: #FFFFFF;
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 10px;
+  transition: all 0.3s linear;
+  /* width: 100%; */
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.check:checked ~ .nav_burger {
+  /* display: flex; */
+  z-index: 1;
+  background-color: #323264;;
+  opacity: 1;
+}
+
+.check:checked ~ .nav_burger ul {
+  transform: translateY(0);
+}
+
+.check:checked ~ .burger span{
+  background-color: #EC6F5D;
+}
+
+.check:checked ~ .burger span:first-child {
+  top: -10px;
+  opacity: 0;
+}
+
+.check:checked ~ .burger span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.check:checked ~ .burger span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.check:checked ~ .burger span:last-child {
+  top: 60px;
+  opacity: 0;
+}
+
+.nav_link_burger{
+  font-weight: 700;
+  font-size: 24px;
+  color: #24a3ff;
+  text-decoration: none;
+}
+
+.nav_burger li {
+  background: #F5F5FA;
+  border-radius: 12px;
+  text-align: center;
+
+}
+
+.nav_burger ul {
+  margin-top: 45px;
+  padding-top: 50px;
+}
+
+.current {
+  color: #F0145A;
+}
+
+.nav_burger li:hover {
+  background: #E6E6F0;
+}
+
