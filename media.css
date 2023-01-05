@@ -1,6 +1,8 @@
 @media (max-width: 1024px) {
   .container {
-    max-width: 904px;
+    max-width: calc(904px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .main_text {
@@ -15,11 +17,17 @@
     max-width: 260px;
     object-fit: cover;
   }
+
+  .wrapper {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 648px;
+    max-width: calc(648px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .header {
@@ -55,16 +63,49 @@
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    max-width: calc(490px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .main_text {
+    max-width: 490px;
+  }
+
+  .team_card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team_card img {
+    max-width: 400px;
+    object-fit: cover;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer_stroke {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 375px) {
   .container {
-    max-width: 315px;
+    max-width: calc(315px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .header {
     display: none;
   }
 
-  .second_mob_head{
+  .second_mob_head {
     display: flex;
     align-items: center;
     height: 72px;
@@ -72,20 +113,20 @@
 
   .head_logo {
     width: 70px;
-    height: 28px;;
+    height: 28px;
   }
 
-  .slash{
+  .slash {
     width: 12px;
     height: 26px;
     margin: 0 4px;
   }
 
-  .page_name{
+  .page_name {
     font-size: 20px;
   }
 
-  .lawcompany{
+  .lawcompany {
     width: 75px;
     height: 5px;
   }
@@ -105,7 +146,7 @@
   .main_text_section {
     margin-top: 30px;
     margin-bottom: 30px;
-}
+  }
 
   .main_text {
     max-width: 315px;
@@ -126,14 +167,13 @@
     display: block;
     text-align: center;
   }
-  
-  .facebook_stroke{
+
+  .facebook_stroke {
     display: block;
     text-align: center;
   }
 
-  .circle{
+  .circle {
     visibility: hidden;
   }
 }
-
