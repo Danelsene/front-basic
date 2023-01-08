@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 998px) {
   .container {
     max-width: calc(730px + 2rem);
     padding-left: 1rem;
@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .container {
     max-width: calc(320px + 2rem);
     padding-left: 1rem;
