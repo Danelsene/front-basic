@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .container {
     max-width: calc(320px + 2rem);
     padding-left: 1rem;
