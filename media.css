@@ -1,4 +1,4 @@
-@media (max-width: 1350px) {
+@media (max-width: 1360px) {
   .container {
     max-width: calc(904px + 2rem);
     padding-left: 1rem;
@@ -9,17 +9,12 @@
     max-width: 660px;
   }
 
-  .team_card {
-    max-width: 260px;
-  }
-
   .team_card img {
-    max-width: 260px;
     object-fit: cover;
   }
 
   .wrapper {
-    gap: 15px;
+    gap: 20px;
   }
 }
 
@@ -52,16 +47,6 @@
     max-width: 730px;
   }
 
-  .team_card {
-    max-width: 300px;
-  }
-
-  .team_card img {
-    max-width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -73,9 +58,9 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 560px) {
   .container {
-    max-width: calc(490px + 2rem);
+    max-width: calc(500px + 2rem);
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -119,7 +104,6 @@
 
   .mobile_header {
     display: block;
-    width: 100vw;
   }
 
   .main_text_section {
@@ -134,16 +118,6 @@
 
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .team_card {
-    max-width: 400px;
-  }
-
-  .team_card img {
-    max-width: 400px;
-    height: 400px;
-    object-fit: cover;
   }
 
   .footer_stroke {
@@ -161,22 +135,14 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   .container {
     max-width: calc(320px + 2rem);
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .team_card {
-    max-width: 320px;
-  }
-
-  .name_part {
-    max-width: 320px;
-  }
-
   .team_card img {
-    max-width: 320px;
+    height: 300px;
   }
 }
