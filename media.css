@@ -4,18 +4,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
-  .main_text {
-    max-width: 660px;
-  }
-
-  .team_card img {
-    object-fit: cover;
-  }
-
-  .wrapper {
-    gap: 20px;
-  }
 }
 
 @media (max-width: 998px) {
@@ -43,12 +31,8 @@
     justify-content: flex-start;
   }
 
-  .main_text {
-    max-width: 730px;
-  }
-
-  .wrapper {
-    grid-template-columns: repeat(2, 1fr);
+  .main_grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .footer_flex {
@@ -106,20 +90,6 @@
     display: block;
   }
 
-  .main_text_section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .main_text {
-    max-width: 490px;
-    font-size: 30px;
-  }
-
-  .wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .footer_stroke {
     display: block;
     text-align: center;
@@ -140,9 +110,5 @@
     max-width: calc(320px + 2rem);
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .team_card img {
-    height: 300px;
   }
 }
