@@ -15,6 +15,9 @@
 
   .header {
     display: block;
+    position: absolute;
+  top: 0;
+  color: #FFFFFF;
   }
 
   .head_left {
@@ -40,7 +43,13 @@
     align-items: center;
     gap: 30px;
   }
+
+   .first_section{
+    background-size: cover;
+  }
+
 }
+
 
 @media (max-width: 560px) {
   .container {
@@ -88,6 +97,9 @@
 
   .mobile_header {
     display: block;
+    /* position: absolute;
+  top: 0;
+  color: #FFFFFF; */
   }
 
   .footer_stroke {
@@ -103,12 +115,17 @@
   .circle {
     visibility: hidden;
   }
+
+  .first_section{
+    min-height: initial;
+    aspect-ratio: 375/600;
+  }
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .container {
     max-width: calc(320px + 2rem);
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
+} */

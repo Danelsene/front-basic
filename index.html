@@ -5,77 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact page</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
+    <script>
+        function scrollToElem(elem) {
+            event.preventDefault()
+            const target = document.querySelector(elem.hash)
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: "smooth"
+            })
+        }
+    </script>
 </head>
 
 <body>
-    <header class="container header">
-        <div class="head_left">
-            <div class="head_logo">
-                <img src="./images/logo.png" alt="logo">
-                <img src="./images/slash.png" alt="slash">
-                <p class="page_name">contact</p>
-            </div>
-            <img src="./images/lawcompany.png" alt="lawcompany">
-        </div>
-        <div class="head_right">
-            <div class="contact_stroke">
-                <div class="lang">
-                    <p>УК</p>
-                </div>
-                <div class="lang">
-                    <p>ES</p>
-                </div>
-                <div class="lang">
-                    <p class="active">EN</p>
-                </div>
-                <div class="circle"></div>
-                <p>Kyiv, Mechnikova str, 14/1</p>
-                <div class="circle"></div>
-                <a href="tel:0800211927" class="phone">0800 211 927</a>
-                <div class="circle"></div>
-                <p>
-                    <a href="#" class="facebook">
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_80116_2872)">
-                                <path
-                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                                    fill="#B3B3BA" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_80116_2872">
-                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </p>
-            </div>
-            <div class="head_left_hidden">
+    <div class="gradient_wrapper">
+
+
+        <header class="container header">
+            <div class="head_left">
                 <div class="head_logo">
-                    <img src="./images/logo.png" alt="logo">
-                    <img src="./images/slash.png" alt="slash">
-                    <h1 class="page_name">contact</h1>
+                    <img src="./images/logo_white.png" alt="logo">
+                    <!-- <img src="./images/slash.png" alt="slash">
+                <p class="page_name">contact</p> -->
                 </div>
-                <img src="./images/lawcompany.png" alt="lawcompany">
+                <img src="./images/LAWCOMPANY_white.png" alt="lawcompany">
             </div>
-            <nav class="nav">
-                <ul class="nav_ul">
-                    <li>about us</li>
-                    <li>services</li>
-                    <li>team</li>
-                    <li>publications</li>
-                    <li class="active_page">contact</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
+            <div class="head_right">
+                <div class="contact_stroke">
+                    <div class="lang">
+                        <p>УК</p>
+                    </div>
+                    <div class="lang">
+                        <p>ES</p>
+                    </div>
+                    <div class="lang">
+                        <p class="active_lang">EN</p>
+                    </div>
+                    <div class="circle"></div>
+                    <p>Kyiv, Mechnikova str, 14/1</p>
+                    <div class="circle"></div>
+                    <a href="tel:0800211927" class="phone">0800 211 927</a>
+                    <div class="circle"></div>
+                    <p>
+                        <a href="#" class="facebook">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_80116_2872)">
+                                    <path
+                                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                        fill="#B3B3BA" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_80116_2872">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+                <div class="head_left_hidden">
+                    <div class="head_logo">
+                        <img src="./images/logo_white.png" alt="logo">
+                        <!-- <img src="./images/slash.png" alt="slash"> -->
+                        <!-- <h1 class="page_name">contact</h1> -->
+                    </div>
+                    <img src="./images/LAWCOMPANY_white.png" alt="lawcompany">
+                </div>
+                <nav class="nav">
+                    <ul class="nav_ul">
+                        <li>about us</li>
+                        <li>services</li>
+                        <li>team</li>
+                        <li>publications</li>
+                        <li class="active_page">contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <section class="mobile_header">
-            <div class="gray head_hidden">
+            <div class="halftransparent head_hidden">
                 <div class="flex_head container">
                     <div class="contact_stroke">
                         <div class="lang">
@@ -85,7 +100,7 @@
                             <p>ES</p>
                         </div>
                         <div class="lang">
-                            <p class="active">EN</p>
+                            <p class="active_lang">EN</p>
                         </div>
                     </div>
                     <a href="tel:0800211927" class="phone">0800 211 927</a>
@@ -94,11 +109,11 @@
             <div class="second_mob_head container">
                 <div class="head_left_hidden">
                     <div class="head_logo">
-                        <img src="./images/logo.png" alt="logo">
-                        <img src="./images/slash.png" alt="slash" class="slash">
-                        <p class="page_name">contact</p>
+                        <img src="./images/logo_white.png" alt="logo">
+                        <!-- <img src="./images/slash.png" alt="slash" class="slash">
+                    <p class="page_name">contact</p> -->
                     </div>
-                    <img src="./images/lawcompany.png" alt="lawcompany" class="lawcompany">
+                    <img src="./images/LAWCOMPANY_white.png" alt="lawcompany" class="lawcompany">
                 </div>
                 <div class="burger_container">
                     <input class="check" type="checkbox">
@@ -120,6 +135,171 @@
                 </div>
             </div>
         </section>
+        <div class="first_section">
+            <h1 class="homepage_h1">your legal solutions provider</h1>
+            <a href="#tabs" onclick="scrollToElem(this)" class="downscroll">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22728_11340)">
+                        <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                        <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_22728_11340">
+                            <rect width="42" height="42" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+        <div id="tabs" class="section_tabs">
+            <div class="container">
+                <div class="tabs_flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Consistent</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Customer oriented</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">Innovative</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">Business oriented</button>
+                    </div>
+                    <div class="tabs_line"></div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h2 class="h2_tabs">We turn the idea of legal services</h2>
+                            <p class="tabs_p">Consolidating many years of experience and practice, the company's lawyers
+                                accompany complex projects and achieve a number of important decisions for the industry.
+                                Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <h2 class="h2_tabs">We are customer oriented</h2>
+                            <p class="tabs_p">Consolidating many years of experience and practice, the company's lawyers
+                                accompany complex projects and achieve a number of important decisions for the industry.
+                                Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <h2 class="h2_tabs">We are innovative</h2>
+                            <p class="tabs_p">Consolidating many years of experience and practice, the company's lawyers
+                                accompany complex projects and achieve a number of important decisions for the industry.
+                                Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            <h2 class="h2_tabs">We are business oriented</h2>
+                            <p class="tabs_p">Consolidating many years of experience and practice, the company's lawyers
+                                accompany complex projects and achieve a number of important decisions for the industry.
+                                Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_cards container">
+            <a href="" class="services_link">services&#62;</a>
+            <h2 class="cards_common_title">What can we do better than others?</h2>
+            <div class="cards_flex">
+                <div class="product_card">
+                    <img src="./images/card_icon_1.png" alt="icon1" class="product_card_image">
+                    <h3 class="product_card_title">IT and e-commerce</h3>
+                    <p class="product_card_text">An endless stream of contracts, tax issues, labor relations, corporate
+                        papers - legal work distracts you from doing business. But there is not much work to do to hire
+                        an in-house lawyer.</p>
+                </div>
+                <div class="product_card">
+                    <img src="./images/card_icon_2.png" alt="icon2" class="product_card_image">
+                    <h3 class="product_card_title">Comprehensive daily legal support</h3>
+                    <p class="product_card_text">In addition, over time, the work will become the same type and
+                        uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good
+                        candidate with experience in the field of information technology in Ukraine.</p>
+                </div>
+                <div class="product_card">
+                    <img src="./images/card_icon_3.png" alt="icon3" class="product_card_image">
+                    <h3 class="product_card_title">Structuring corporate relationships</h3>
+                    <p class="product_card_text">Instead of just providing legal services, we will hire a lawyer or a
+                        whole team that will fit into the daily life of your company</p>
+                </div>
+                <div class="product_card">
+                    <img src="./images/card_icon_4.png" alt="icon4" class="product_card_image">
+                    <h3 class="product_card_title">Building contractual relations</h3>
+                    <p class="product_card_text">Once a week, or week after month, you have your own lawyer by your
+                        side. Anyone in the company can catch it at the coffee maker and just talk about current affairs
+                        instead of waiting for update status.</p>
+                </div>
+                <div class="product_card">
+                    <img src="./images/card_icon_5.png" alt="icon5" class="product_card_image">
+                    <h3 class="product_card_title">Protection of business, intellectual property</h3>
+                    <p class="product_card_text">And all the other time he will work on new diverse projects, so he will
+                        definitely not stop in professional development. One way or another, all Axon Partners will work
+                        for you instead of a corporate lawyer.</p>
+                </div>
+                <div class="product_card">
+                    <img src="./images/card_icon_6.png" alt="icon6" class="product_card_image">
+                    <h3 class="product_card_title">Judicial representation</h3>
+                    <p class="product_card_text">Is it a small, medium-sized company or a market leader? Local business
+                        or multinational company? Do you have your own legal department or not?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gray_underlevel1"></div>
+    <div class="gray_underlevel2"></div>
+
+
+    <main>
+
+        <section>
+            <div id="slider" class="slick_slider container">
+                <div class="slider_flex">
+                    <img src="./images/Team-1.png" alt="team1" class="slider_image">
+                    <div class="slider_right">
+                        <a href="" class="services_link">команда&#62;</a>
+                        <h2 class="cards_common_title">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                            чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                        <p class="team_name">Олександр Олександровський</p>
+                        <p class="team_position">Керуючий партнер</p>
+                    </div>
+                </div>
+                <div class="slider_flex">
+                    <img src="./images/Team-5.png" alt="team5" class="slider_image">
+                    <div class="slider_right">
+                        <a href="" class="services_link">команда&#62;</a>
+                        <h2 class="cards_common_title">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                            чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                        <p class="team_name">Оксана Кобзар</p>
+                        <p class="team_position">Юрист, партнер-співласник</p>
+                    </div>
+                </div>
+                <div class="slider_flex">
+                    <img src="./images/Team-2.png" alt="team2" class="slider_image">
+                    <div class="slider_right">
+                        <a href="" class="services_link">команда&#62;</a>
+                        <h2 class="cards_common_title">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                            чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                        <p class="team_name">Євген Патриков</p>
+                        <p class="team_position">Фінансовий директор</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
         <section class="container small main_grid">
             <div class="main_left">
                 <p class="contact_adress">Kyiv, <br> Mechnikova str, 14</p>
@@ -203,6 +383,12 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
