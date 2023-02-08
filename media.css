@@ -1,12 +1,26 @@
-@media (max-width: 1360px) {
-  .container {
-    max-width: calc(904px + 2rem);
+
+/* @media (max-width: 2000px) {
+  .brands_section{
+    max-width: calc(1320px + 2rem);
     padding-left: 1rem;
     padding-right: 1rem;
   }
+} */
+
+@media (max-width: 1430px) {
+  .container {
+    max-width: calc(950px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+.slider_image{
+  height: 500px;
 }
 
-@media (max-width: 998px) {
+}
+
+@media (max-width: 1060px) {
   .container {
     max-width: calc(730px + 2rem);
     padding-left: 1rem;
@@ -16,8 +30,8 @@
   .header {
     display: block;
     position: absolute;
-  top: 0;
-  color: #FFFFFF;
+    top: 0;
+    color: #FFFFFF;
   }
 
   .head_left {
@@ -34,9 +48,38 @@
     justify-content: flex-start;
   }
 
-  .main_grid {
-    grid-template-columns: repeat(1, 1fr);
+  .cards_flex {
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .slider_flex{
+    flex-direction: column;
+  }
+
+  .slider_image{
+    max-width: 730px;
+  }
+
+  .brand_cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .publications_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .publication_image{
+    max-width: 730px;
+    width: 100%;
+    object-fit: cover;
+  }
+
 
   .footer_flex {
     flex-direction: column;
@@ -48,10 +91,48 @@
     background-size: cover;
   }
 
+  .nav-pills{
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .nav-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-pills {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .tabs_flex{
+    flex-direction: column;
+  }
+
+  .tabs_line {
+    width: 100%;
+    max-width: 800px;
+    height: 4px;
+  }
+
+  .nav-link{
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  .container {
+    max-width: calc(550px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
 }
 
 
-@media (max-width: 560px) {
+@media (max-width: 660px) {
   .container {
     max-width: calc(500px + 2rem);
     padding-left: 1rem;
@@ -73,19 +154,11 @@
     height: 28px;
   }
 
-  .slash {
-    width: 12px;
-    height: 26px;
-    margin: 0 4px;
-  }
-
-  .page_name {
-    font-size: 20px;
-  }
 
   .lawcompany {
     width: 75px;
     height: 5px;
+    margin-top: 25px;
   }
 
   .flex_head {
@@ -93,13 +166,19 @@
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100vw;
   }
 
   .mobile_header {
     display: block;
-    /* position: absolute;
-  top: 0;
-  color: #FFFFFF; */
+    position: absolute;
+    top: 0;
+    color: #FFFFFF;
+  }
+
+  .check{
+    background-color: #FFFFFF;
+    color: #FFFFFF;
   }
 
   .footer_stroke {
@@ -120,12 +199,45 @@
     min-height: initial;
     aspect-ratio: 375/600;
   }
+
+  .cards_flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .publications_grid{
+    display: block;
+  }
+
+  .publication_card{
+    margin-bottom: 30px;
+  }
+
+  .brand_cards{
+    grid-template-columns: repeat(1, 1fr);
+    height: 720px;
+    overflow-y: auto;
+  }
+
+  .brand_cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brand_cards {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .homepage_h1{
+    max-width: 300px;
+    text-align: center;
+  }
+
 }
 
-/* @media (max-width: 450px) {
-  .container {
-    max-width: calc(320px + 2rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+@media (max-width: 550px) {
+  
+  .homepage_h1{
+    position: relative;
+    top: 150px;
   }
-} */
+}
