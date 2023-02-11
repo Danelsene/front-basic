@@ -67,10 +67,9 @@ textarea {
   display: none;
 }
 
-.mobile_header {
+.mobile_header{
   position: absolute;
-  top: 0;
-  color: #ffffff;
+  width: 100%;
   display: none;
 }
 
