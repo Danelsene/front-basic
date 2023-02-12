@@ -1,0 +1,221 @@
+/* @media (max-width: 2000px) {
+  .brands_section{
+    max-width: calc(1320px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+} */
+
+@media (max-width: 1430px) {
+  .container {
+    max-width: calc(950px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .services_main_container {
+    max-width: calc(950px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .popup {
+    left: 30%;
+    top: 15%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: calc(730px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .services_main_container {
+    max-width: calc(730px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 280px;
+  }
+
+  .header {
+    display: block;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+  }
+
+  .head_left {
+    display: none;
+  }
+
+  .head_left_hidden {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .nav_ul {
+    justify-content: flex-start;
+  }
+
+  .publications_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .publication_image {
+    max-width: 730px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .footer_flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .popup {
+    left: 25%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    max-width: calc(550px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .services_main_container {
+    max-width: calc(550px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .popup {
+    left: 18%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 660px) {
+  .container {
+    max-width: calc(500px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .services_main_container {
+    max-width: calc(500px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 132px;
+  }
+
+  .services_ul {
+    columns: 1;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .second_mob_head {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    margin-top: 10px;
+  }
+
+  .head_logo {
+    width: 70px;
+    height: 28px;
+  }
+
+  .lawcompany {
+    width: 75px;
+    height: 5px;
+    margin-top: 25px;
+  }
+
+  .flex_head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .mobile_header {
+    display: block;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+  }
+
+  .check {
+    background-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .footer_stroke {
+    display: block;
+    text-align: center;
+  }
+
+  .facebook_stroke {
+    display: block;
+    text-align: center;
+  }
+
+  .circle {
+    visibility: hidden;
+  }
+
+  .publications_grid {
+    display: block;
+  }
+
+  .publication_card {
+    margin-bottom: 30px;
+  }
+
+  .page_name {
+    font-size: 30px;
+  }
+
+  .lawcompany {
+    margin-top: 15px;
+  }
+  .page_name {
+    font-size: 20px;
+  }
+
+  .popup {
+    left: 10%;
+    top: 25%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 550px) {
+  .homepage_h1 {
+    position: relative;
+    top: 150px;
+  }
+
+  .popup {
+    left: 5%;
+    top: 25%;
+    max-width: 350px;
+  }
+}
